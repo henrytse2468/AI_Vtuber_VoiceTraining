@@ -9,6 +9,10 @@ import torch
 import torch.multiprocessing as mp
 from concurrent.futures import ProcessPoolExecutor
 import torchaudio
+
+# to sucessfully import utils package
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from utils.hparams import get_hparams_from_file, HParams
 from utils.mel_processing import wav_to_mel
 

@@ -1,0 +1,3 @@
+python preprocess/mel_transform.py --data_dir ../output_folder -c datasets/custom_base/config.yaml
+ln -s ../output_folder DUMMY3
+python train.py -c datasets/custom_base/config.yaml  -m custom_base
